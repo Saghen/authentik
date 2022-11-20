@@ -274,6 +274,7 @@ DATABASES = {
         "USER": CONFIG.y("postgresql.user"),
         "PASSWORD": CONFIG.y("postgresql.password"),
         "PORT": int(CONFIG.y("postgresql.port")),
+        "OPTIONS": { "sslmode": CONFIG.y("postgresql.sslmode") }
     }
 }
 
